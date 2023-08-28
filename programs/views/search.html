@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>検索ページ</title>
+    <style>
+        nav {
+            text-align: center;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            list-style: none;
+            display: inline-block;
+            width: 10%;
+            min-width: 90px;
+        }
+
+        nav li:not(:last-child) {
+            border-right: 2px solid #ddd;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav a.current {
+            color: #00B0F0;
+            border-bottom: 2px solid #00B0F0;
+        }
+
+        nav a:hover {
+            color: #F7CB4D;
+            border-bottom: 2px solid #F7CB4D;
+        }
+
+        .margin {
+            margin-bottom: 5em;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a class=”current” href="home.php"> Home </a></li>
+      <li><a href="search.html"> Search </a></li>
+      <li><a href="communitie.php"> Community </a></li>
+      <li><a href="mypro_check.php"> Profile </a></li>
+        </ul>
+    </nav>
+    <p class="margin"></p>
+    <div style="text-align: center">
+        <form action="result2.php" method="POST">
+            <input type="search" name="search" placeholder="アーティスト名を入力" size="40" required>
+            <input type="submit" name="submit" value="検索">
+        </form>
+        <br>
+        <img src="KYOKULOG_logo.png" alt="曲ログロゴ" width="400" height="400">
+    </div>
+</body>
+
+</html>

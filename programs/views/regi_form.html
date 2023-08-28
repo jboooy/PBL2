@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+        <link rel="stylesheet" href="./login_css/login.css">
+        <link rel="stylesheet" href="./detail_css/main_tag.css">
+        <meta charset="utf-8">
+        <title>登録画面</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+              <li><a class=”current” href=home.php> Home </a></li>
+              <li><a href=search.html> Search </a></li>
+              <li><a href=communitie.php> Community </a></li>
+              <li><a href=mypro_check.php> Profile </a></li>
+            </ul>
+        </nav>
+
+        <image class="logo" src="./KYOKULOG_logo.png" alt="キョクログロゴ"></image>
+        
+        <h1>新規登録</h1>
+        <form action="regi.php" method="POST" class="form_content">
+            <table class="table_regi">
+                <tr>
+                    <td class="label">ユーザーID：</td><td><input class="text" type="text" name ="user_id" maxlength = 25 pattern="^[a-zA-Z0-9]+$" required></td>
+                </tr>
+                <tr>
+                    <td class="label">名前：</td><td><input class="text" type="text" name ="user_name" maxlength = 30 required></td>
+                </tr>
+                <tr>
+                    <td class="label">パスワード：</td><td><input class="text" type="text" name ="password1" maxlength = 20 required></td>
+                </tr>
+                <tr>
+                    <td class="label">パスワード（２回目）：</td><td><input class="text" type="text" name ="password2" maxlength = 20 required></td>
+                </tr>
+                <tr>
+                    <td class="label">年齢：</td><td><input class="number" type="number" name ="age" maxlength = 4 min="0" max="100" required></td>
+                </tr>
+                <tr>
+                    <td class="label">性別：</td><td><div class="radio_cont"><label><input class="radio" type="radio" name ="sex" value = "man" required>男</label><label><input class="radio" type="radio" name="sex" value="woman">女</td></label></div>
+                </tr>
+                <tr>
+                    <td class="label">お気に入りのジャンル：</td><td><input class="text" type="text" name ="favorite" required></td>
+                </tr>
+                <tr><td colspan="2"><input class="button"type="submit" value="登録"></td></tr>
+            </table>
+        </form>
+        <a href ="login_form.html"><button class = "regi_page_button">戻る</button></a>
+        
+    </body>
+</html>

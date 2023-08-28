@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+        <link rel="stylesheet" href="./login_css/login.css">
+        <link rel="stylesheet" href="./detail_css/main_tag.css">
+        <meta charset="utf-8">
+        <title>ログイン画面</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+              <li><a class=”current” href=home.php> Home </a></li>
+              <li><a href=search.html> Search </a></li>
+              <li><a href=communitie.php> Community </a></li>
+              <li><a href=mypro_check.php> Profile </a></li>
+            </ul>
+        </nav>
+
+        <image class="logo" src="./KYOKULOG_logo.png" alt="キョクログロゴ"></image>
+        <h1>ログイン</h1>
+        <form class="form_content" action="login.php" method="POST" >
+            <table class="table_login">
+                <tr>
+                    <td class="label">ユーザーID：</td><td><input type="text" class="text" name ="user_id" maxlength = 25 pattern="^[a-zA-Z0-9]+$" required></td>
+                </tr>
+                <tr>
+                    <td class="label">パスワード：</td><td><input type="password" class="text" name ="password" maxlength = 20 required></td>
+                </tr>
+                <tr><td colspan="2"><input class ="button" type="submit" value="ログイン"></td></tr>
+            </table>
+        </form>
+        <p class="regi_guide">まだ登録していない方は</p>
+        <a href ="regi_form.html"><button class = "regi_page_button" >新規登録</button></a>
+    </body>
+</html>

@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+body{
+    text-align: center; 
+    font-family: "M PLUS 1p";
+}
+
+.header{
+    display:flex;
+    height:80px;
+    padding: 5px;
+    font-weight: bold;
+    color: black;
+    align-items: center;
+}
+
+h1{
+    font-size: 45px;
+    margin: 30px;
+    border-top: 5px solid #6cf173;
+    border-bottom: 5px solid #6cf173;
+    padding: 10px;
+}
+
+input.text{
+    border-radius: 10px;
+    color: black;
+    padding: 10px;
+    width:450px;
+    border:1px solid black;
+}
+
+input.radio{
+    transform:scale(1.2);
+}
+input.number{
+    border-radius: 10px;
+    color: black;
+    padding: 10px;
+    width:450px;
+    border:1px solid black;
+}
+
+.button{
+    border-radius: 10px;
+    background-color : #d1d1d1;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    height: 60px;
+    width: 240px;
+    margin-top: 30px;
+    border-bottom: 5px solid #6e6e6e;
+
+}
+
+.button:hover{
+    background-color : #6cf173;
+    transition-duration: 0.5s;
+    border-bottom: 2px solid #6e6e6e;
+}
+
+.form_content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 8px;
+}
+
+.table_login{
+    margin-top: 10px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-spacing: 0px 10px;    
+    font-size: 25px;
+}
+
+.table_regi{
+    margin-top: 10px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-spacing: 0px 10px;    
+    font-size: 25px;
+}
+
+td.label{
+    text-align: right;
+    font-weight: bold;
+}
+
+p.regi_guide{
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.regi_page_button{
+    border-radius: 10px;
+    background-color : #d1d1d1;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    height: 60px;
+    width: 240px;
+    margin-top: 30px;
+    border-bottom: 5px solid #6e6e6e;
+    margin-bottom: 100px;
+}
+
+.regi_page_button:hover{
+    background-color : #6cf173;
+    transition-duration: 0.5s;
+    border-bottom: 2px solid #6e6e6e;
+}
+
+.radio_cont{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+p.error{
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p.succes{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo{
+    margin-top: 20px;
+    width: 400px;
+}
+
+nav{
+    background-color: #6afa74;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
